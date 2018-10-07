@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import subprocess
 
@@ -41,11 +41,8 @@ def print_cells(cells):
 
 
 def main():
-    cmd = ['iwlist', 'wlan0', 'scan']
-    p = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-    cells = p.stdout.read().decode('utf-8')
-    # p = subprocess.run(['iwlist', 'wlan0', 'scan'], stdout=subprocess.PIPE)
-    # cells = parse_cells(p.stdout.decode('utf-8'))
+    p = subprocess.run(['iwlist', 'wlan0', 'scan'], stdout=subprocess.PIPE)
+    cells = parse_cells(p.stdout.decode('utf-8'))
     print_cells(cells)
 
 

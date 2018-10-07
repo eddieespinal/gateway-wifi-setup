@@ -5,9 +5,9 @@ module.exports = {
 
   // ip to be used by the AP
   ap_ip: '192.168.220.1',
-  startGateway: 'systemctl start mozilla-iot-gateway',
-  stopGateway: 'systemctl stop mozilla-iot-gateway',
-  restartGateway: 'systemctl restart mozilla-iot-gateway',
+  startGateway: 'systemctl start mozilla-gateway-wifi-setup',
+  stopGateway: 'systemctl stop mozilla-gateway-wifi-setup',
+  restartGateway: 'systemctl restart mozilla-gateway-wifi-setup',
   stopWifiService: 'systemctl stop mozilla-gateway-wifi-setup',
 
   // A shell command that outputs the string "COMPLETED" if we are
