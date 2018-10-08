@@ -28,7 +28,7 @@ to: https://github.com/mozilla-iot/gateway-wifi-setup/wiki/Testing-on-WoT-Base-I
 First, clone this repo and download its dependencies from npm:
 
 ```
-$ git clone https://github.com/mozilla-iot/gateway-wifi-setup
+$ git clone https://github.com/eddieespinal/gateway-wifi-setup
 $ cd gateway-wifi-setup.setup
 $ npm install
 ```
